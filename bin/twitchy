@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+require 'twitchy/twitchy'
+
+trap ("SIGINT") { exit! }
+
+t = Twitchy.new(ARGV)
+
+if t.streamers.empty?
+    if t.options.user
+        puts "User follows no streamers"
+    else
+        puts t.banner
+    end
+    exit
+end
+
+if t.options.videos
+    t.get_archives
+else
+    t.check_status
+    if t.online.empty?
+        puts "All streamers are offline"
+        exit
+    end
+end
+
+t.puts_streams
+t.get_choice
+
+#vim: ft=rb
