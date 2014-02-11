@@ -18,7 +18,7 @@ Usage: twitchy [options] [channel ..]
 ```
 ## Dependencies
 
-Requires [`livestreamer`](https://github.com/chrippa/livestreamer) (obviously), and currently the [`colorize`](https://github.com/fazibear/colorize) gem.
+Requires [`livestreamer`](https://github.com/chrippa/livestreamer) (obviously), and currently the [`colorize`](https://github.com/fazibear/colorize) and [`launchy`](http://www.copiousfreetime.org/projects/launchy) gems.
 
 ## Installation
 
