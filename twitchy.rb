@@ -150,13 +150,13 @@ class Twitch
             game:       nil
         )
         @optparser = OptionParser.new do |opts|
-            opts.banner = "Usage: twitch [options] [channel ..]"
+            opts.banner = "Usage: ruby twitchy.rb [options] [channel ..]"
 
             opts.on("-p", "--player PLAYER", "Set video player") do |p|
                 @options.player = p
             end
 
-            opts.on("-c", "--chat", "Open chat with the video") do
+            opts.on("-c", "--chat", "Open popout chat with the stream") do
                 @options.chat = true
             end
 
@@ -168,7 +168,7 @@ class Twitch
                 @options.quality = q
             end
 
-            opts.on("-v", "--videos", "List archives sorted by date") do
+            opts.on("-v", "--videos", "List archives instead of streams") do
                 @options.videos = true
             end
 
