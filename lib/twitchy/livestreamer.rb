@@ -13,7 +13,7 @@ module Livestreamer
                  "twitch.tv/#{channel} #{quality} & "
         popout_chat = "http://www.twitch.tv/chat/embed"\
                       "?channel=#{channel}&popout_chat=true"
-        Launchy.open(popout_chat)
+        Launchy.open(popout_chat) if chat
         exec stream
     end
 
