@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'twitchy'
-  s.version     = '0.1.3'
-  s.date        = '2014-02-11'
+  s.version     = '0.1.4'
+  s.date        = '2014-02-15'
   s.summary     = "A Ruby wrapper around livestreamer"
   s.description = "Twitchy provides for a system to query the TwitchAPI "\
                   "for use with livestreamer. List online channels, "\

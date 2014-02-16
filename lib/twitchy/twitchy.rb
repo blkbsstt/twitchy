@@ -255,7 +255,7 @@ class Twitchy
         opts = @options.dup
         opts.quality = quality
         Livestreamer.start_stream(
-            streamer, @options.player, @options.quality, @options.chat
+            streamer, @options.player, opts.quality, @options.chat
         )
     end
 
